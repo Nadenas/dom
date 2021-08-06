@@ -3,6 +3,8 @@ window.onload = function() {
 	let countries = ["USA", "France", "Italy", "Brazil", "Colombia", "Belize", "Venezuela"];
 	
   // your code here
-  
-  countries.innerHTML = "#mySelect"
+  document.querySelector("#mySelect");
+  document.createElement(countries, "option");
+  countries.appendChild("#mySelect");
+
 };
