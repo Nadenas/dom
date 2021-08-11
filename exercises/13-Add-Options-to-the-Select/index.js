@@ -3,8 +3,14 @@ window.onload = function() {
 	let countries = ["USA", "France", "Italy", "Brazil", "Colombia", "Belize", "Venezuela"];
 	
   // your code here
-  document.querySelector("#mySelect");
-  document.createElement(countries, "option");
-  countries.appendChild("#mySelect");
-
+  let select = document.querySelector("#mySelect");
+  
+  for (let i = 0; i < countries.length; i++) {
+    let country = countries[i]
+    select.innerHTML += `<option>${country}<option>`
+  }
+  select.addEventListener("change", function(){
+    alert(event.target.value)
+  })
+  
 };
